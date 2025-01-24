@@ -65,7 +65,7 @@ async function _mineFreeGas(
     };
 }
 
-export default async function getSFUEL(account: string, contractPayer: any, rpcUrls: string | ethers.utils.ConnectionInfo | undefined) {
+export default async function getSFUEL(account: string, contractPayer: string, rpcUrls: string | ethers.utils.ConnectionInfo | undefined) {
     const wallet = ethers.Wallet.createRandom();
 
     const provider = new ethers.providers.JsonRpcProvider(rpcUrls); // Ensure this URL is correct
